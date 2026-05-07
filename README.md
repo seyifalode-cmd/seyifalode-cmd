@@ -2,6 +2,8 @@
 
 > Building secure, scalable cloud infrastructure — and hunting the threats that target it.
 
+**[View Full Project Portfolio →](https://github.com/seyifalode-cmd/portfolio)**
+
 I work across the full cloud security stack: infrastructure automation with Terraform and Ansible, container orchestration with Kubernetes and Docker, CI/CD pipelines with Jenkins, and proactive threat detection using CrowdStrike Falcon and Splunk. My projects reflect real-world engineering problems — not tutorials.
 
 ---
