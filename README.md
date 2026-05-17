@@ -28,18 +28,19 @@ CrowdStrike Falcon · Splunk · MITRE ATT&CK · SOC Monitoring · Threat Hunting
 
 | Project | What It Is |
 |---------|-----------|
+| [Kubernetes Container Security Pipeline](https://github.com/seyifalode-cmd/k8s-container-security-pipeline) | Three-layer DevSecOps pipeline: Trivy image scanning + OPA Gatekeeper admission control + Falco runtime threat detection on a live Minikube cluster |
 | [CrowdStrike Threat Hunt — SCATTERED SPIDER](https://github.com/seyifalode-cmd/crowdstrike-threat-hunt-portfolio) | Hypothesis-driven threat hunt against a real-world eCrime group using CrowdStrike Falcon CQL, mapped to MITRE ATT&CK v14 |
 | [Splunk SOC Monitoring Lab](https://github.com/seyifalode-cmd/splunk-soc-monitoring-lab) | End-to-end SOC monitoring environment built in Splunk with detection rules and dashboards |
 | [AWS Disaster Recovery Strategy](https://github.com/seyifalode-cmd/disaster-recovery-strategy-aws) | Multi-region AWS DR architecture with RTO/RPO targets and automated failover |
 | [Azure Key Vault Lab](https://github.com/seyifalode-cmd/azure-key-vault-lab) | Secrets management and access policy automation using Azure Key Vault |
 | [Kubernetes Rolling Deployment](https://github.com/seyifalode-cmd/kubernetes-rolling-deployment-demo) | Zero-downtime rolling deployments on Kubernetes with health checks and rollback |
-| [Load-Balanced Autoscaling Web Servers](https://github.com/seyifalode-cmd/load-balanced-autoscaling-webservers) | AWS ALB + Auto Scaling Group provisioned end-to-end with Terraform |
 
 ---
 
 ## Project Categories
 
 ### Security & Threat Detection
+- [k8s-container-security-pipeline](https://github.com/seyifalode-cmd/k8s-container-security-pipeline) — Trivy · OPA Gatekeeper · Falco · three-layer Kubernetes security pipeline
 - [crowdstrike-threat-hunt-portfolio](https://github.com/seyifalode-cmd/crowdstrike-threat-hunt-portfolio) — CrowdStrike Falcon threat hunt · SCATTERED SPIDER · MITRE ATT&CK
 - [splunk-soc-monitoring-lab](https://github.com/seyifalode-cmd/splunk-soc-monitoring-lab) — Splunk SOC monitoring and detection
 
