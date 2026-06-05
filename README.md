@@ -29,6 +29,7 @@ Sigma Rules · Detection-as-Code · MITRE ATT&CK · CrowdStrike Falcon · Splunk
 | Project | What It Is |
 |---------|-----------|
 | [**Sigma Detection Rules — 15-Rule ATT&CK Library**](https://github.com/seyifalode-cmd/sigma-detection-rules) | Production-grade detection-as-code library: 15 MITRE ATT&CK-mapped Sigma rules spanning credential access, lateral movement, exfiltration, persistence, defense evasion, and impact — each with Splunk SPL, Sentinel KQL, and Elastic translations |
+| [**SOAR Playbooks — SOC Automation Library**](https://github.com/seyifalode-cmd/soar-playbooks) | 4 vendor-neutral SOAR playbooks (phishing response, suspicious login, malware/endpoint isolation, cloud misconfiguration) with Mermaid flowcharts, Python enrichment scripts (VirusTotal, MISP, IP geo), and mandatory human-in-the-loop approval gates mapped to MITRE ATT&CK |
 | [Kubernetes Container Security Pipeline](https://github.com/seyifalode-cmd/k8s-container-security-pipeline) | Three-layer DevSecOps pipeline: Trivy image scanning + OPA Gatekeeper admission control + Falco runtime threat detection on a live Minikube cluster |
 | [CrowdStrike Threat Hunt — SCATTERED SPIDER](https://github.com/seyifalode-cmd/crowdstrike-threat-hunt-portfolio) | Hypothesis-driven threat hunt against a real-world eCrime group using CrowdStrike Falcon CQL, mapped to MITRE ATT&CK v14 |
 | [Wiz + Palo Alto Cloud IR Playbook](https://github.com/seyifalode-cmd/wiz-paloalto-cloud-ir-playbook) | End-to-end cloud incident response — Wiz Toxic Combination detection (Log4Shell + public S3 + IAM escalation) with Palo Alto Cortex XDR automated containment |
@@ -44,6 +45,7 @@ Sigma Rules · Detection-as-Code · MITRE ATT&CK · CrowdStrike Falcon · Splunk
 
 ### Security & Threat Detection
 - [sigma-detection-rules](https://github.com/seyifalode-cmd/sigma-detection-rules) — 15 MITRE ATT&CK-mapped Sigma rules · Splunk SPL · Sentinel KQL · Elastic · detection-as-code
+- [soar-playbooks](https://github.com/seyifalode-cmd/soar-playbooks) — 4 SOAR playbooks · phishing · suspicious login · malware · cloud misconfiguration · Python enrichment · MITRE ATT&CK · human-in-the-loop
 - [k8s-container-security-pipeline](https://github.com/seyifalode-cmd/k8s-container-security-pipeline) — Trivy · OPA Gatekeeper · Falco · three-layer Kubernetes security pipeline
 - [wiz-paloalto-cloud-ir-playbook](https://github.com/seyifalode-cmd/wiz-paloalto-cloud-ir-playbook) — Wiz Toxic Combination detection · Palo Alto Cortex XDR · cloud incident response
 - [crowdstrike-threat-hunt-portfolio](https://github.com/seyifalode-cmd/crowdstrike-threat-hunt-portfolio) — CrowdStrike Falcon threat hunt · SCATTERED SPIDER · MITRE ATT&CK
@@ -92,6 +94,7 @@ Sigma Rules · Detection-as-Code · MITRE ATT&CK · CrowdStrike Falcon · Splunk
 
 ## Currently Working On
 - Detection-as-code: expanding the MITRE ATT&CK-mapped Sigma rule library with Splunk, Sentinel, and Elastic coverage
+- SOAR playbook development: automating SOC response workflows with human-in-the-loop approval gates
 - Cloud security architecture and detection engineering across AWS and Azure environments
 
 ---
