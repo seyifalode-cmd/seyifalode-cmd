@@ -4,7 +4,7 @@
 
 **[View Full Project Portfolio →](https://github.com/seyifalode-cmd/portfolio)**
 
-I work across the full cloud security stack: infrastructure automation with Terraform and Ansible, container orchestration with Kubernetes and Docker, CI/CD pipelines with Jenkins, and proactive threat detection using CrowdStrike Falcon and Splunk. My projects reflect real-world engineering problems — not tutorials.
+I work across the full cloud security stack: infrastructure automation with Terraform and Ansible, container orchestration with Kubernetes and Docker, CI/CD pipelines with Jenkins, and proactive threat detection using MITRE ATT&CK-mapped Sigma rules, CrowdStrike Falcon, and Splunk. My projects reflect real-world engineering problems — not tutorials.
 
 ---
 
@@ -20,7 +20,7 @@ Kubernetes · Docker · Docker Compose · Docker Swarm · Spring Boot on K8s
 Jenkins (multi-node, pipelines, Groovy libraries) · Python CD · Infrastructure as Code
 
 **Security & Threat Detection**
-CrowdStrike Falcon · Splunk · MITRE ATT&CK · SOC Monitoring · Threat Hunting · EDR · Azure Key Vault
+Sigma Rules · Detection-as-Code · MITRE ATT&CK · CrowdStrike Falcon · Splunk · Microsoft Sentinel · Elastic SIEM · SOC Monitoring · Threat Hunting · EDR · Azure Key Vault
 
 ---
 
@@ -28,10 +28,12 @@ CrowdStrike Falcon · Splunk · MITRE ATT&CK · SOC Monitoring · Threat Hunting
 
 | Project | What It Is |
 |---------|-----------|
+| [**Sigma Detection Rules — 15-Rule ATT&CK Library**](https://github.com/seyifalode-cmd/sigma-detection-rules) | Production-grade detection-as-code library: 15 MITRE ATT&CK-mapped Sigma rules spanning credential access, lateral movement, exfiltration, persistence, defense evasion, and impact — each with Splunk SPL, Sentinel KQL, and Elastic translations |
 | [Kubernetes Container Security Pipeline](https://github.com/seyifalode-cmd/k8s-container-security-pipeline) | Three-layer DevSecOps pipeline: Trivy image scanning + OPA Gatekeeper admission control + Falco runtime threat detection on a live Minikube cluster |
 | [CrowdStrike Threat Hunt — SCATTERED SPIDER](https://github.com/seyifalode-cmd/crowdstrike-threat-hunt-portfolio) | Hypothesis-driven threat hunt against a real-world eCrime group using CrowdStrike Falcon CQL, mapped to MITRE ATT&CK v14 |
 | [Wiz + Palo Alto Cloud IR Playbook](https://github.com/seyifalode-cmd/wiz-paloalto-cloud-ir-playbook) | End-to-end cloud incident response — Wiz Toxic Combination detection (Log4Shell + public S3 + IAM escalation) with Palo Alto Cortex XDR automated containment |
-| [Splunk SOC Monitoring Lab](https://github.com/seyifalode-cmd/splunk-soc-monitoring-lab) | End-to-end SOC monitoring environment built in Splunk with detection rules and dashboards |
+| [Azure Cloud Security Lab](https://github.com/seyifalode-cmd/azure-cloud-security-lab) | Hands-on Azure security lab covering Entra ID, RBAC, Defender for Cloud, Microsoft Sentinel, VNet/NSG, and KQL threat detection |
+| [Splunk SOC Monitoring Lab](https://github.com/seyifalode-cmd/splunk-soc-monitoring-lab) | End-to-end SOC monitoring environment built in Splunk with detection rules, alerts, and dashboards |
 | [AWS Disaster Recovery Strategy](https://github.com/seyifalode-cmd/disaster-recovery-strategy-aws) | Multi-region AWS DR architecture with RTO/RPO targets and automated failover |
 | [Azure Key Vault Lab](https://github.com/seyifalode-cmd/azure-key-vault-lab) | Secrets management and access policy automation using Azure Key Vault |
 | [Kubernetes Rolling Deployment](https://github.com/seyifalode-cmd/kubernetes-rolling-deployment-demo) | Zero-downtime rolling deployments on Kubernetes with health checks and rollback |
@@ -41,9 +43,11 @@ CrowdStrike Falcon · Splunk · MITRE ATT&CK · SOC Monitoring · Threat Hunting
 ## Project Categories
 
 ### Security & Threat Detection
+- [sigma-detection-rules](https://github.com/seyifalode-cmd/sigma-detection-rules) — 15 MITRE ATT&CK-mapped Sigma rules · Splunk SPL · Sentinel KQL · Elastic · detection-as-code
 - [k8s-container-security-pipeline](https://github.com/seyifalode-cmd/k8s-container-security-pipeline) — Trivy · OPA Gatekeeper · Falco · three-layer Kubernetes security pipeline
 - [wiz-paloalto-cloud-ir-playbook](https://github.com/seyifalode-cmd/wiz-paloalto-cloud-ir-playbook) — Wiz Toxic Combination detection · Palo Alto Cortex XDR · cloud incident response
 - [crowdstrike-threat-hunt-portfolio](https://github.com/seyifalode-cmd/crowdstrike-threat-hunt-portfolio) — CrowdStrike Falcon threat hunt · SCATTERED SPIDER · MITRE ATT&CK
+- [azure-cloud-security-lab](https://github.com/seyifalode-cmd/azure-cloud-security-lab) — Entra ID · RBAC · Defender for Cloud · Microsoft Sentinel · KQL
 - [splunk-soc-monitoring-lab](https://github.com/seyifalode-cmd/splunk-soc-monitoring-lab) — Splunk SOC monitoring and detection
 
 ### Cloud Infrastructure (AWS & Azure)
@@ -87,8 +91,8 @@ CrowdStrike Falcon · Splunk · MITRE ATT&CK · SOC Monitoring · Threat Hunting
 ---
 
 ## Currently Working On
-- Expanding the CrowdStrike threat hunting portfolio
-- Cloud security architecture and detection engineering
+- Detection-as-code: expanding the MITRE ATT&CK-mapped Sigma rule library with Splunk, Sentinel, and Elastic coverage
+- Cloud security architecture and detection engineering across AWS and Azure environments
 
 ---
 
