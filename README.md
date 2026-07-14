@@ -4,7 +4,7 @@
 
 **[View Full Project Portfolio →](https://github.com/seyifalode-cmd/portfolio)**
 
-I work across the full cloud security stack: infrastructure automation with Terraform and Ansible, container orchestration with Kubernetes and Docker, CI/CD pipelines with Jenkins, and proactive threat detection using MITRE ATT&CK-mapped Sigma rules, CrowdStrike Falcon, and Splunk. My projects reflect real-world engineering problems — not tutorials.
+I work across the full cloud security stack: detection engineering and threat modelling, identity security and Zero Trust architecture, cloud-native security pipelines, and security automation. My projects are hands-on — built from scratch, validated with measurable results, documented to a standard that demonstrates the actual work.
 
 ---
 
@@ -20,7 +20,7 @@ Kubernetes · Docker · Docker Compose · Docker Swarm · Spring Boot on K8s
 Jenkins (multi-node, pipelines, Groovy libraries) · Python CD · Infrastructure as Code
 
 **Security & Threat Detection**
-Sigma Rules · Detection-as-Code · MITRE ATT&CK · CrowdStrike Falcon · Splunk · Microsoft Sentinel · Elastic SIEM · SOC Monitoring · Threat Hunting · EDR · Azure Key Vault
+Detection Engineering · MITRE ATT&CK · Sigma Rules · GuardDuty · EventBridge · Lambda · CloudTrail · Microsoft Entra ID · Conditional Access · Zero Trust · CrowdStrike Falcon · Splunk · Microsoft Sentinel · Elastic SIEM · SOC Monitoring · Threat Hunting · EDR
 
 ---
 
@@ -28,29 +28,35 @@ Sigma Rules · Detection-as-Code · MITRE ATT&CK · CrowdStrike Falcon · Splunk
 
 | Project | What It Is |
 |---------|-----------|
+| [**Operation FORAGER — Detection Engineering Lab**](https://github.com/seyifalode-cmd/operation-forager-detection-lab) | End-to-end detection lab around a malware-free intrusion: 51,225 labelled synthetic log events, 4 behavioural detections in 3 structural shapes, scored 4/4 with zero false positives — plus a human-in-the-loop AI triage validation exercise |
+| [**AWS GuardDuty Automated Threat Detection Pipeline**](https://github.com/seyifalode-cmd/aws-guardduty-threat-detection-pipeline) | 8-service AWS-native pipeline built from scratch: GuardDuty → EventBridge → SNS + Lambda → CloudTrail + S3 → CloudWatch. Automated EC2 isolation on HIGH severity findings. 391 sample findings processed, 8 alert emails delivered in seconds |
+| [**Entra ID Conditional Access Lab**](https://github.com/seyifalode-cmd/entra-conditional-access-lab) | Enterprise identity security framework on Microsoft Entra ID Premium P2: 5 Conditional Access policies (MFA, geo-blocking, compliant device, privileged access, vendor restriction) with Graph API JSON, PowerShell deployment scripts, and What If validation |
 | [**Sigma Detection Rules — 15-Rule ATT&CK Library**](https://github.com/seyifalode-cmd/sigma-detection-rules) | Production-grade detection-as-code library: 15 MITRE ATT&CK-mapped Sigma rules spanning credential access, lateral movement, exfiltration, persistence, defense evasion, and impact — each with Splunk SPL, Sentinel KQL, and Elastic translations |
-| [**SOAR Playbooks — SOC Automation Library**](https://github.com/seyifalode-cmd/soar-playbooks) | 4 vendor-neutral SOAR playbooks (phishing response, suspicious login, malware/endpoint isolation, cloud misconfiguration) with Mermaid flowcharts, Python enrichment scripts (VirusTotal, MISP, IP geo), and mandatory human-in-the-loop approval gates mapped to MITRE ATT&CK |
+| [**SOAR Playbooks — SOC Automation Library**](https://github.com/seyifalode-cmd/soar-playbooks) | 4 vendor-neutral SOAR playbooks (phishing response, suspicious login, malware/endpoint isolation, cloud misconfiguration) with Python enrichment scripts, VirusTotal/MISP/IP geo integration, and mandatory human-in-the-loop approval gates |
 | [Kubernetes Container Security Pipeline](https://github.com/seyifalode-cmd/k8s-container-security-pipeline) | Three-layer DevSecOps pipeline: Trivy image scanning + OPA Gatekeeper admission control + Falco runtime threat detection on a live Minikube cluster |
 | [CrowdStrike Threat Hunt — SCATTERED SPIDER](https://github.com/seyifalode-cmd/crowdstrike-threat-hunt-portfolio) | Hypothesis-driven threat hunt against a real-world eCrime group using CrowdStrike Falcon CQL, mapped to MITRE ATT&CK v14 |
 | [Wiz + Palo Alto Cloud IR Playbook](https://github.com/seyifalode-cmd/wiz-paloalto-cloud-ir-playbook) | End-to-end cloud incident response — Wiz Toxic Combination detection (Log4Shell + public S3 + IAM escalation) with Palo Alto Cortex XDR automated containment |
-| [Azure Cloud Security Lab](https://github.com/seyifalode-cmd/azure-cloud-security-lab) | Hands-on Azure security lab covering Entra ID, RBAC, Defender for Cloud, Microsoft Sentinel, VNet/NSG, and KQL threat detection |
-| [Splunk SOC Monitoring Lab](https://github.com/seyifalode-cmd/splunk-soc-monitoring-lab) | End-to-end SOC monitoring environment built in Splunk with detection rules, alerts, and dashboards |
-| [AWS Disaster Recovery Strategy](https://github.com/seyifalode-cmd/disaster-recovery-strategy-aws) | Multi-region AWS DR architecture with RTO/RPO targets and automated failover |
-| [Azure Key Vault Lab](https://github.com/seyifalode-cmd/azure-key-vault-lab) | Secrets management and access policy automation using Azure Key Vault |
-| [Kubernetes Rolling Deployment](https://github.com/seyifalode-cmd/kubernetes-rolling-deployment-demo) | Zero-downtime rolling deployments on Kubernetes with health checks and rollback |
+| [Splunk SOC Monitoring Lab](https://github.com/seyifalode-cmd/splunk-soc-monitoring-lab) | End-to-end SOC monitoring environment built in Splunk with SPL queries, detection rules, scheduled alerts, and dashboards |
 
 ---
 
 ## Project Categories
 
-### Security & Threat Detection
+### Detection Engineering & Threat Detection
+- [operation-forager-detection-lab](https://github.com/seyifalode-cmd/operation-forager-detection-lab) — Malware-free intrusion simulation · 51,225 synthetic log events · 4 behavioural detections · 3 structural shapes · 4/4 validated · zero false positives · Python standard library only
+- [aws-guardduty-threat-detection-pipeline](https://github.com/seyifalode-cmd/aws-guardduty-threat-detection-pipeline) — GuardDuty · EventBridge · SNS · Lambda · CloudTrail · S3 · CloudWatch · automated EC2 isolation · severity triage · forensic audit chain
 - [sigma-detection-rules](https://github.com/seyifalode-cmd/sigma-detection-rules) — 15 MITRE ATT&CK-mapped Sigma rules · Splunk SPL · Sentinel KQL · Elastic · detection-as-code
 - [soar-playbooks](https://github.com/seyifalode-cmd/soar-playbooks) — 4 SOAR playbooks · phishing · suspicious login · malware · cloud misconfiguration · Python enrichment · MITRE ATT&CK · human-in-the-loop
-- [k8s-container-security-pipeline](https://github.com/seyifalode-cmd/k8s-container-security-pipeline) — Trivy · OPA Gatekeeper · Falco · three-layer Kubernetes security pipeline
-- [wiz-paloalto-cloud-ir-playbook](https://github.com/seyifalode-cmd/wiz-paloalto-cloud-ir-playbook) — Wiz Toxic Combination detection · Palo Alto Cortex XDR · cloud incident response
 - [crowdstrike-threat-hunt-portfolio](https://github.com/seyifalode-cmd/crowdstrike-threat-hunt-portfolio) — CrowdStrike Falcon threat hunt · SCATTERED SPIDER · MITRE ATT&CK
-- [azure-cloud-security-lab](https://github.com/seyifalode-cmd/azure-cloud-security-lab) — Entra ID · RBAC · Defender for Cloud · Microsoft Sentinel · KQL
 - [splunk-soc-monitoring-lab](https://github.com/seyifalode-cmd/splunk-soc-monitoring-lab) — Splunk SOC monitoring and detection
+
+### Identity Security & Zero Trust
+- [entra-conditional-access-lab](https://github.com/seyifalode-cmd/entra-conditional-access-lab) — Microsoft Entra ID Premium P2 · 5 Conditional Access policies · MFA · geo-blocking · Intune device compliance · vendor restriction · Graph API JSON · PowerShell deployment
+- [azure-cloud-security-lab](https://github.com/seyifalode-cmd/azure-cloud-security-lab) — Entra ID · RBAC · Defender for Cloud · Microsoft Sentinel · KQL
+
+### Cloud Security & Incident Response
+- [wiz-paloalto-cloud-ir-playbook](https://github.com/seyifalode-cmd/wiz-paloalto-cloud-ir-playbook) — Wiz Toxic Combination detection · Palo Alto Cortex XDR · cloud incident response
+- [k8s-container-security-pipeline](https://github.com/seyifalode-cmd/k8s-container-security-pipeline) — Trivy · OPA Gatekeeper · Falco · three-layer Kubernetes security pipeline
 
 ### Cloud Infrastructure (AWS & Azure)
 - [aws-terraform-ec2-iac](https://github.com/seyifalode-cmd/aws-terraform-ec2-iac) — EC2 provisioning with Terraform IaC
@@ -93,9 +99,9 @@ Sigma Rules · Detection-as-Code · MITRE ATT&CK · CrowdStrike Falcon · Splunk
 ---
 
 ## Currently Working On
-- Detection-as-code: expanding the MITRE ATT&CK-mapped Sigma rule library with Splunk, Sentinel, and Elastic coverage
-- SOAR playbook development: automating SOC response workflows with human-in-the-loop approval gates
-- Cloud security architecture and detection engineering across AWS and Azure environments
+- Detection engineering: building and validating behavioural detection rules mapped to MITRE ATT&CK across cloud identity, AWS, and endpoint log sources
+- Cloud security automation: AWS-native threat response pipelines using GuardDuty, EventBridge, Lambda, and CloudTrail
+- Identity security: Zero Trust frameworks using Microsoft Entra ID Conditional Access and least-privilege architecture
 
 ---
 
