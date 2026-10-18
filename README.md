@@ -2,9 +2,9 @@
 
 > Building secure, scalable cloud infrastructure — and hunting the threats that target it.
 
-**[View Full Project Portfolio →](https://github.com/seyifalode-cmd/portfolio)**
+📍 Toronto, Canada · [LinkedIn](https://www.linkedin.com/in/oluwaseyi-falode-bb3b1651) · **[View Full Project Portfolio →](https://github.com/seyifalode-cmd/portfolio)**
 
-I work across the full cloud security stack: detection engineering and threat modelling, identity security and Zero Trust architecture, cloud-native security pipelines, and security automation. My projects are hands-on — built from scratch, validated with measurable results, documented to a standard that demonstrates the actual work.
+I work across the full cloud security stack: SOC investigation and incident triage, detection engineering and threat modelling, identity security and Zero Trust architecture, cloud-native security pipelines, and security automation. My projects are hands-on — built from scratch, validated with measurable results, and documented honestly: what was demonstrated, what wasn't, and the evidence behind each claim.
 
 ---
 
@@ -22,12 +22,18 @@ Jenkins (multi-node, pipelines, Groovy libraries) · Python CD · Infrastructure
 **Security & Threat Detection**
 Detection Engineering · MITRE ATT&CK · Sigma Rules · GuardDuty · EventBridge · Lambda · CloudTrail · Microsoft Entra ID · Conditional Access · Zero Trust · CrowdStrike Falcon · Splunk · Microsoft Sentinel · Elastic SIEM · SOC Monitoring · Threat Hunting · EDR
 
+**SOC Investigation & Response**
+KQL (Sentinel · Azure Data Explorer) · Azure Activity Logs · Sysmon · Windows Event Logs · PowerShell (Get-WinEvent) · Sysinternals · Alert-to-Incident Triage · Timeline Reconstruction · Jira Case Management · Containment & Recovery Verification · Python
+
 ---
 
 ## Featured Projects
 
 | Project | What It Is |
 |---------|-----------|
+| [**SOC Identity Investigation Lab**](https://github.com/seyifalode-cmd/soc-identity-investigation-lab) | Suspicious login to verified recovery: KQL timeline reconstruction, Jira case ownership, a sequence-based Python detector (10/10 scenarios passed), duplicate-safe alert replay, and verified containment (401/403) and recovery |
+| [**SOC Endpoint Investigation Lab**](https://github.com/seyifalode-cmd/soc-endpoint-investigation-lab) | Windows 11 endpoint instrumented with Sysmon: process lineage, file/network/DNS telemetry, a found-and-fixed collection gap, scoped timelines, and 3 ATT&CK-mapped Sigma rules checked against 24 synthetic test cases |
+| [**Azure Activity Sentinel Detection Lab**](https://github.com/seyifalode-cmd/azure-activity-sentinel-detection-lab) | Microsoft Sentinel scheduled analytics rule on Azure Activity Logs: KQL hunting, event timeline reconstruction, two alert-to-incident investigations closed with documented benign-positive rationale, cost-guarded lab |
 | [**Operation FORAGER — Detection Engineering Lab**](https://github.com/seyifalode-cmd/operation-forager-detection-lab) | End-to-end detection lab around a malware-free intrusion: 51,225 labelled synthetic log events, 4 behavioural detections in 3 structural shapes, scored 4/4 with zero false positives — plus a human-in-the-loop AI triage validation exercise |
 | [**AWS GuardDuty Automated Threat Detection Pipeline**](https://github.com/seyifalode-cmd/aws-guardduty-threat-detection-pipeline) | 8-service AWS-native pipeline built from scratch: GuardDuty → EventBridge → SNS + Lambda → CloudTrail + S3 → CloudWatch. Automated EC2 isolation on HIGH severity findings. 391 sample findings processed, 8 alert emails delivered in seconds |
 | [**Entra ID Conditional Access Lab**](https://github.com/seyifalode-cmd/entra-conditional-access-lab) | Enterprise identity security framework on Microsoft Entra ID Premium P2: 5 Conditional Access policies (MFA, geo-blocking, compliant device, privileged access, vendor restriction) with Graph API JSON, PowerShell deployment scripts, and What If validation |
@@ -42,7 +48,13 @@ Detection Engineering · MITRE ATT&CK · Sigma Rules · GuardDuty · EventBridge
 
 ## Project Categories
 
+### SOC Investigation & Incident Triage
+- [soc-identity-investigation-lab](https://github.com/seyifalode-cmd/soc-identity-investigation-lab) — Suspicious login investigation · KQL · Jira case management · Python detector · alert replay · containment & recovery verified
+- [soc-endpoint-investigation-lab](https://github.com/seyifalode-cmd/soc-endpoint-investigation-lab) — Windows 11 · Sysmon Event IDs 1/3/11/22 · PowerShell timelines · 3 Sigma rules · T1033 · T1016 · T1059.001
+- [azure-activity-sentinel-detection-lab](https://github.com/seyifalode-cmd/azure-activity-sentinel-detection-lab) — Microsoft Sentinel · Azure Activity Logs · KQL query library · scheduled analytics rule · incident triage
+
 ### Detection Engineering & Threat Detection
+- [process-injection-detection-lab](https://github.com/seyifalode-cmd/process-injection-detection-lab) — Windows process injection (T1055) · Sysinternals · Sysmon Event IDs 8/10 · Splunk SPL and KQL detections
 - [operation-forager-detection-lab](https://github.com/seyifalode-cmd/operation-forager-detection-lab) — Malware-free intrusion simulation · 51,225 synthetic log events · 4 behavioural detections · 3 structural shapes · 4/4 validated · zero false positives · Python standard library only
 - [aws-guardduty-threat-detection-pipeline](https://github.com/seyifalode-cmd/aws-guardduty-threat-detection-pipeline) — GuardDuty · EventBridge · SNS · Lambda · CloudTrail · S3 · CloudWatch · automated EC2 isolation · severity triage · forensic audit chain
 - [sigma-detection-rules](https://github.com/seyifalode-cmd/sigma-detection-rules) — 15 MITRE ATT&CK-mapped Sigma rules · Splunk SPL · Sentinel KQL · Elastic · detection-as-code
@@ -73,7 +85,6 @@ Detection Engineering · MITRE ATT&CK · Sigma Rules · GuardDuty · EventBridge
 - [kubernetes-core-namespaces-demo](https://github.com/seyifalode-cmd/kubernetes-core-namespaces-demo) — Kubernetes namespace architecture
 - [kubernetes-mysql-persistent-volume-demo](https://github.com/seyifalode-cmd/kubernetes-mysql-persistent-volume-demo) — MySQL with persistent volumes on K8s
 - [kubernetes-cluster-ec2-infrastructure](https://github.com/seyifalode-cmd/kubernetes-cluster-ec2-infrastructure) — K8s cluster on EC2 with Terraform
-- [spring-boot-k8s-vulnerability-remediation](https://github.com/seyifalode-cmd/spring-boot-k8s-vulnerability-remediation) — Spring Boot containerisation and K8s security hardening
 - [docker-swarm-ec2-provisioner](https://github.com/seyifalode-cmd/docker-swarm-ec2-provisioner) — Docker Swarm on EC2 with Terraform + Ansible
 - [ghost-blog-docker-compose](https://github.com/seyifalode-cmd/ghost-blog-docker-compose) — Ghost + MySQL via Docker Compose
 - [docker-springboot-container-build](https://github.com/seyifalode-cmd/docker-springboot-container-build) — Spring Boot Docker container build
@@ -82,7 +93,6 @@ Detection Engineering · MITRE ATT&CK · Sigma Rules · GuardDuty · EventBridge
 - [jenkins-ci-cd-springboot-docker](https://github.com/seyifalode-cmd/jenkins-ci-cd-springboot-docker) — Jenkins pipeline for Spring Boot + Docker
 - [jenkins-docker-springboot-ci](https://github.com/seyifalode-cmd/jenkins-docker-springboot-ci) — Jenkins + Docker + Maven CI for Spring Boot
 - [jenkins-multi-node-infrastructure](https://github.com/seyifalode-cmd/jenkins-multi-node-infrastructure) — Multi-node Jenkins master setup on EC2
-- [jenkins-groovy-reporting-library](https://github.com/seyifalode-cmd/jenkins-groovy-reporting-library) — Reusable Groovy library for Jenkins build reports
 - [python-ci-cd-pipeline](https://github.com/seyifalode-cmd/python-ci-cd-pipeline) — Jenkins + Ansible CD pipeline for Python apps
 
 ### Ansible & Configuration Management
@@ -96,9 +106,13 @@ Detection Engineering · MITRE ATT&CK · Sigma Rules · GuardDuty · EventBridge
 ### Terraform & IaC Testing
 - [terratest-infrastructure](https://github.com/seyifalode-cmd/terratest-infrastructure) — Infrastructure testing with Terratest
 
+### Lab Environment
+- [ubuntu-24.04-on-apple-silicon-using-utm](https://github.com/seyifalode-cmd/ubuntu-24.04-on-apple-silicon-using-utm) — Ubuntu 24.04 VM on Apple Silicon with UTM
+
 ---
 
 ## Currently Working On
+- SOC investigation: end-to-end alert-to-incident workflows across identity, endpoint, and Azure control-plane telemetry, with evidence-backed case decisions
 - Detection engineering: building and validating behavioural detection rules mapped to MITRE ATT&CK across cloud identity, AWS, and endpoint log sources
 - Cloud security automation: AWS-native threat response pipelines using GuardDuty, EventBridge, Lambda, and CloudTrail
 - Identity security: Zero Trust frameworks using Microsoft Entra ID Conditional Access and least-privilege architecture
