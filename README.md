@@ -111,11 +111,6 @@ KQL (Sentinel · Azure Data Explorer) · Azure Activity Logs · Sysmon · Window
 
 ---
 
-## Currently Working On
-- SOC investigation: end-to-end alert-to-incident workflows across identity, endpoint, and Azure control-plane telemetry, with evidence-backed case decisions
-- Detection engineering: building and validating behavioural detection rules mapped to MITRE ATT&CK across cloud identity, AWS, and endpoint log sources
-- Cloud security automation: AWS-native threat response pipelines using GuardDuty, EventBridge, Lambda, and CloudTrail
-- Identity security: Zero Trust frameworks using Microsoft Entra ID Conditional Access and least-privilege architecture
 
 ---
 
